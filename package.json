@@ -1,0 +1,12 @@
+{
+  "name": "melange-reason-rescript-benchmarks",
+  "version": "0.1.1",
+  "description": "Persistent Vector implemenetation in ReScript",
+  "keywords": [
+    "rescript",
+    "melange",
+    "reason"
+  ],
+  "author": "Hyunwoo Nam",
+  "license": "MIT"
+}

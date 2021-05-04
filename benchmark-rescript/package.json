@@ -1,0 +1,36 @@
+{
+  "name": "melange-reason-benchmark-bs",
+  "version": "1.0.0",
+  "description": "A benchmarking application for bucklescript",
+  "main": "dist/index.html",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "re:build": "bsb -make-world",
+    "re:watch": "bsb -make-world -w",
+    "re:clean": "bsb -clean-world",
+    "dev": "parcel src/index.html",
+    "build": "yarn re:build && parcel build src/index.html --public-url ./",
+    "deploy": "yarn build && gh-pages -d dist"
+  },
+  "author": "John",
+  "license": "MIT",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "bs-platform": "^9.0.2",
+    "bsb-js": "^1.1.7",
+    "gh-pages": "^3.1.0",
+    "parcel": "^2.0.0-beta.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "mori": "^0.3.2",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reason-react": "0.9.1",
+    "rescript-vector": "0.1.1"
+  }
+}
